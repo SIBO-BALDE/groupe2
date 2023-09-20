@@ -1,0 +1,38 @@
+#container{
+    display: grid;
+    grid-template-columns:repeat(4,1fr) ;
+    grid: repeat;
+    gap: 20px;
+   /* margin-left: 15px; */
+   overflow: hidden;
+   margin-bottom: 10%;
+   /* width: 100%; */
+   /* height: 100%; */
+   background-color: #CCCC;
+    }
+
+img{
+    height: 250px;
+    width: 70%;
+    /* border-radius: 5%; */
+}
+hr{
+    width: 6%;
+}
+h2{
+    justify-content: center;
+    text-align: center;
+}
+.big{
+    background-color: #CCCC;
+    width: 100%;
+    height: 500px;
+}
+.tete{
+    text-align: center;
+}
+.indice{
+    background-color: white;
+    height: 350px;
+    border: #CCCC;
+}

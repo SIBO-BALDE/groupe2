@@ -1,0 +1,33 @@
+#propos{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 150px;
+    margin-right: 150px;
+    border:1px solid ; 
+    width: 100%;
+    height: 100%;
+
+
+}
+h2{
+    margin-left: 150px;
+}
+img{
+    width: 100%;
+    height: 60%;
+}
+p{
+    line-height: 20px;
+    width: 50%;
+}
+iframe{
+border-radius: 5%;
+margin-left: 30px;
+}
+#propos.a-props2{
+    display: flexbox;
+    justify-content:space-between
+}
+#propos.a-props1{
+    
+}
