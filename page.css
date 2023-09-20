@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+:root{
+    --principal:#008374;
+    --secondaire:#F85A40;
+    --blanc:#ffff;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--principal);
+    padding-top: 20px;
+}
+.nav-logo{
+    display: flex;
+    /* justify-content: flex-start; */
+    margin-left: 300px;
+}
+.active{
+    border-bottom: 3px solid var(--secondaire);
+}
+.lien-ancres{
+    justify-content: flex-end;
+    margin-right: 240px;
+    
+}
+.fa-chevron-down{
+    margin-left: 0px;
+}
+.lien-ancres a{
+    color: var(--blanc);
+    margin-right: 20px;
+
+
+}
+.fa-chevron-down{
+    color: var(--blanc);
+}
+.nav-logo p{
+    color: var(--blanc);
+    
+}
+.nav-logo span{
+    width: 10px;
+    height: 10px;
+    background-color: var(--secondaire);
+    border-radius: 50%;
+    margin-top: 10px;
+}
+.carrousel-menu{
+    background-color: var(--principal);
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+.text-carroussel{
+    padding-top: 60px;
+    color: var(--blanc);
+    margin-right: 250px;
+}
+.btn-submit{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: var(--principal);
+    color: var(--blanc);
+    box-shadow: 1px 1px 10px  rgb(100, 99, 99);
+    /* border: 1px solid var(--principal); */
+    border: none;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+.top-carroussel{
+   display: flex;
+   justify-content: center;
+   text-align: center;
+}
+.content-1, .content-2,.content-3,.content-4{
+    position: relative;
+    margin-top: -70px;
+    background-color: var(--principal);
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px rgb(48, 47, 47);
+    margin-right: 10px;
+}
+.content-1 .icons-top{
+    margin-top: 50px;
+}
+.content-2 .icons-top{
+    margin-top: 50px;
+}
+.content-3 .icons-top{
+    margin-top: 50px;
+}
+.content-4 .icons-top{
+    margin-top: 50px;
+}
+.fa-tv,.fa-gem,.fa-location-dot,.bi-command{
+    color: #8dc8c1;
+    font-size: 30px;
+
+}
+.text-para{
+    font-size: 20px ;
+    color: var(--blanc);
+    font-weight: bold;
+}
+.fa-circle-play{
+    color: var(--blanc);
+    box-shadow: 1px 1px 10px  rgb(100, 99, 99);
+    margin-right: 5px;
+    
+}
+.content-card{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 200px;
+    align-items: center;
+    margin-left: 200px;
+}
+
