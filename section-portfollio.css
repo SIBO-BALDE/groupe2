@@ -1,0 +1,92 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.portofollio-all {
+    background-color: #F6F6F6;
+}
+.portofollio-all .portofollio-head {
+    display: flex;
+    justify-content: center;
+}
+.portofollio-all .portofollio-head ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+.portofollio-all .portofollio-head ul li {
+    display: inline-block;
+}
+.portofollio-all .portofollio-head ul li a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.portofollio-all .portofollio-head ul li a:hover {
+    color: #0F8E87;
+}
+.portofollio-all .portofollio-head ul li .a-1 {
+    color: #0F8E87;
+}
+
+#portofollio {
+    margin: auto;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0 8%;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+@media screen and (max-width: 575.98px) {
+    #portofollio {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (min-width: 576px) {
+    #portofollio {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width: 992px) {
+    #portofollio {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+#portofollio .portofollio-box {
+    border-radius: 6px;
+    width: 250px;
+    height: 260px;
+    display: grid;
+    grid-template-rows: 190px, 70px;
+    background-color: white;
+    box-sizing: border-box;
+}
+#portofollio .box-items-first {
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    height: 190px;
+    width: 248px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+#portofollio .portofollio-description {
+    height: 70px;
+}
+#portofollio .portofollio-description h4{
+    font-size: 10px;
+    color: #424141;
+    margin: 12px 0 0 12px;
+}
+#portofollio .portofollio-description h4 span{
+    font-size: 14px;
+    color: #272F31;
+}
+#portofollio .portofollio-box {
+    display: inline-block;
+    color: #222227;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #EEEEEE;
+}

@@ -1,0 +1,70 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#services {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    background-color: #F6F6F6;
+    padding: 4% 8%;
+    box-sizing: border-box;
+}
+@media screen and (max-width: 575.98px) {
+    #services {
+        grid-template-columns: repeat(, 1fr);
+    }
+}
+@media screen and (min-width: 576px) {
+    #services {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width: 992px){
+    #services {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+#services .services-box {
+    border-radius: 10px;
+    background-color: white;
+    padding: 30px;
+    box-sizing: border-box;
+}
+#services .services-box:active {
+    background-color: rgb(246, 246, 246);
+}
+#services .box-items-first {
+
+}
+#services .box-items-first i {
+    font-size: 60px;
+    position: relative;
+    z-index: 2;
+}
+#services .box-items-first .circle {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #EEEEEE;
+    position: relative;
+    top: -65px;
+    left: 24px;
+    z-index: 1;
+}
+#services .services-box h3 {
+    display: inline-block;
+    color: #222227;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #EEEEEE;
+}
+#services .services-box p {
+    color: #121212;
+    font-weight: 300;
+    font-size: 0.8em;
+}
+#services .services-box a {
+    color: #0ab3c3;
+    text-decoration: none;
+    font-size: 0.9em;
+}
