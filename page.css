@@ -10,6 +10,8 @@
     --principal:#008374;
     --secondaire:#F85A40;
     --blanc:#ffff;
+    --gris:#A2A2A2;
+    --gray:#F6F6F6;
 }
 .navbar{
     display: flex;
@@ -120,11 +122,174 @@
     margin-right: 5px;
     
 }
+      /* **********************section team impact design***************************** */
 .content-card{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    margin-top: 200px;
+    column-gap: 0px;
+    justify-items: center;
+    
+   
+}
+.text-entete{
+     margin-top: 200px;
+     margin-bottom: 30px;
+     text-align: center;
+}
+.text-entete h1{
+    /* border-bottom: 2px solid var(--principal); */
+    text-align: center;
+    display: inline;
+    margin-bottom: 80px;
+}
+.hr-content {
+    width: 10px;
+    /* background-color: var(--principal); */
+    border-top: 3px solid var(--principal);;
+    text-align: center;
     align-items: center;
-    margin-left: 200px;
 }
 
+.social-medias-quatre,.social-medias-trois,.social-medias-deux,.social-medias-un{
+    display: flex;
+    
+}
+.card-un,.card-deux,.card-trois,.card-quatre{
+    width: 220px;
+    height: 300px;
+    background-color: whitesmoke;
+    border: 7px solid whitesmoke;
+    box-shadow: 5px 5px 5px rgb(153, 153, 153);
+}
+.img-quatre img{
+    border-radius: 15px;
+}
+.text-card-un{
+    text-align: center;
+}
+.text-card-deux{
+    text-align: center;
+}
+.text-card-trois{
+    text-align: center;
+}
+.text-card-quatre{
+    text-align: center;
+}
+.p2{
+    font-style: italic !important;
+    text-align: center;
+    color: var(--gris);
+}
+.fa-twitter,.fa-facebook,.fa-instagram,.fa-linkedin{
+    margin-left: 20px;
+    border: 1px solid var(--gris);
+    font-size: 20px;
+    border-radius: 50%;
+    color: var(--gris);
+    padding: 3px;
+}
+
+
+
+    /* *********************Section pricing design****************** */
+#pricing{
+    background-color: var(--gray);
+    margin-top: 200px;
+}
+.pricing-content{
+    display: flex;
+    justify-content: center;
+    
+}
+.free-pricing,.business-pricing,.developer-pricing{
+    background-color: var(--blanc);
+    height:400px ;
+    width: 18%;
+    border: none;
+    border-radius: 10px;
+    margin-top: 100px;  
+}
+.free-pricing,.developer-pricing{
+    margin-top: 10em;
+}
+
+.business-pricing{
+    border: 3px solid var(--principal);
+    box-shadow: 0px 5px 5px rgb(124, 123, 123);
+    height: 500px;
+    
+   
+}
+.titre-un{
+    text-align: center;
+    margin-top: 30px;
+    color: var(--gris);
+}
+.cercle{
+   text-align: center;
+   background-color: var(--principal);
+   border-radius: 50%;
+   height: 50px;
+   width: 50px;
+   margin-left: 120px;
+   margin-top: 20px;
+   display: flex;
+   flex-wrap: wrap;
+   place-content:center;
+  
+}
+.month{
+    color: var(--gris);
+    font-size: 10px;
+}
+.bi-airplane,.fa-cube,.fa-paper-plane{
+    color: var(--blanc);
+    font-weight: bold;
+}
+.montant{
+    text-align: center;
+    color: var(--secondaire);
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+.text-icons{
+    margin-left: 30px;
+}
+
+.text-icons p{
+    color: var(--gris);
+    line-height: 1.5em;
+    
+}
+
+.text-icons p .fa-check{
+    color: var(--principal);
+}
+.text-icons p .fa-xmark{
+    color: var(--gris);
+}
+.barre{
+    text-decoration: line-through;
+}
+.btn-buy{
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+.btn-buy button{
+    border: 1px solid var(--principal);
+    border-radius: 20px;
+    background-color: var(--blanc);
+    color: var(--principal);
+    box-shadow: 5px 5px 5px rgb(174, 173, 173);
+    width: 120px;
+    height: 40px;
+    margin-top: 20px;
+   
+}
+.btn-text-icons{
+    margin-top: 5em !important;
+}
