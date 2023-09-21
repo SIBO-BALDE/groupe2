@@ -106,7 +106,7 @@
 .content-4 .icons-top{
     margin-top: 50px;
 }
-.fa-tv,.fa-gem,.fa-location-dot,.bi-command{
+.fa-tv,.fa-gem,#local-carrou,.bi-command{
     color: #8dc8c1;
     font-size: 30px;
 
@@ -125,11 +125,21 @@
       /* **********************section team impact design***************************** */
 .content-card{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    column-gap: 0px;
-    justify-items: center;
-    
+    grid-template-columns: 25% 25% 25% 25%;
+    /* column-gap: 15px; */
+    width: 60%;
+    justify-content: center;
+    margin: 0 auto;
+
    
+}
+hr{
+    color: var(--principal);
+    width: 5%;
+    margin: 0 auto;
+    border: 3px solid var(--principal);
+    /* pour faire descendre le hr */
+    text-underline-offset: 3px;
 }
 .text-entete{
      margin-top: 200px;
@@ -143,11 +153,18 @@
     margin-bottom: 80px;
 }
 .hr-content {
+    display: inline;
     width: 10px;
-    /* background-color: var(--principal); */
     border-top: 3px solid var(--principal);;
+   text-align: center;
+    
+   
+}
+.hr-content hr{
+    width: 10px;
     text-align: center;
-    align-items: center;
+   
+
 }
 
 .social-medias-quatre,.social-medias-trois,.social-medias-deux,.social-medias-un{
@@ -292,4 +309,118 @@
 }
 .btn-text-icons{
     margin-top: 5em !important;
+}
+
+/* *********************Section contact design****************** */
+#contact{
+    padding-top: 90px !important;
+}
+.contact{
+    display: grid;
+    grid-template-columns:35% 65%;
+    padding: 50px 200px;
+    box-shadow: 0px 1px 2px rgb(101, 99, 99);
+    
+}
+
+.lefthand{
+    background-color: var(--principal);
+   border-top-left-radius: 10px;
+   border-bottom-left-radius: 10px;
+   box-shadow: -4px 0 5px rgb(220, 220, 220);
+}
+.righthand{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: -0 0 7px rgb(220, 220, 220);
+
+}
+.lefthand p{
+    color: var(--blanc);
+    margin-left: 10px;
+}
+.location-lefthand,.email-lefthand,.call-lefthand,.hours-lefthand{
+    display: flex;
+    align-items: center;
+    width: 99%;
+}
+.incon-finder{
+   
+    margin-left: 9px;
+}
+#location{
+    color: var(--blanc);
+    size: 10px;
+}
+#para-content{
+    width: 90% !important;
+}
+#element-lefthand{
+    background-color: var(--principal);
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 2px #59ead9;
+    padding-top: 5px;
+    padding-bottom: 5px !important ;
+    margin-left: 7px;
+    margin-right: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 90%;
+}
+.call-lefthand{
+    padding-top: 5px;
+    padding-bottom: 5px !important;
+
+}
+#location,.fa-mobile-screen,.fa-clock,.fa-envelope{
+    margin-right: 8px;
+    background-color: #59ead9;
+    border-radius: 50px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+   flex-wrap: wrap;
+   place-content:center ;
+   
+}
+.para-para{
+   font-size: 10px;
+}
+.formulaire{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+#input1,#input2{
+    width: 48%;
+    padding: 15px 0;
+    border-radius: 5px;
+    border: 2px solid var(--gris);
+    padding-left: 5px;
+    box-shadow: 0px 1px 2px rgb(153, 153, 153);
+   
+}
+#input1{
+    margin-right: 5px;
+}
+.flex-input{
+    display: flex;
+}
+#input3{
+    width: 96.5%;
+    margin-bottom: 40px;
+    padding: 15px 0;
+    border-radius: 5px;
+    border: none;
+    padding-left: 5px;
+    border: 2px solid var(--gris);
+    box-shadow: 0px 1px 2px rgb(153, 153, 153);
+}
+#text-area{
+   
+   border: 2px solid var(--gris);
+   border-radius: 5px;
+   padding-left: 5px !important;
+   box-shadow: 0px 1px 2px rgb(153, 153, 153);
+
 }
