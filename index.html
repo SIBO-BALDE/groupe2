@@ -15,7 +15,7 @@
     
     <!-- Feuilles de styles principales -->
     <link rel="stylesheet" href="styles.css">
-    <title>Impact</title>
+    <title>Page</title>
 </head>
 <body>
     <section id="menu">
@@ -24,16 +24,46 @@
             <div class="nav-logo">
                 <p style="font-size: 25px; font-weight: 700; margin-top: -6px;">Impact</p><span></span>
             </div>
-            <div class="lien-ancres">
-                <a href="#menu" class="active">Home</a>
-                <a href="#propos"  class="active">About</a>
-                <a href="#service"  class="active">Service</a>
-                <a href="#porto"  class="active">Portfolio</a>
-                <a href="#team-impact"  class="active">Team</a>
-                <a href="section-header.html"  class="active">Blog</a>
-                <a href="#pricing" >Drop Down <i class="fa-solid fa-chevron-down"  class="active"></i></span></a><span>
-                <a href="#contact"  class="active">Contact</a>
+            <div class="lien-ancres" id="ancre">
+                <div id="aff">
+                    <a href="" class="active afficher" id="afficher">Home</a>
+                    <a href="#propo" class="afficher" id="afficher">About</a>
+                    <a href="#service" class="afficher" id="afficher">Service</a>
+                    <a href="#porto" class="afficher" id="afficher">Portfolio</a>
+                    <a href="#team" class="afficher" id="afficher">Team</a>
+                    <a href="section-header.html" class="afficher" id="afficher">Blog</a>
+                    <a href="contact" class="afficher" id="afficher">Contact</a>
+                </div>
+                <a><i id="hamburger" class="fa-solid fa-bars hamburger" style="cursor: pointer;"></i></a>
+                <script>
+                    let j = 0;
+                    let play= document.getElementById("hamburger");
+                    let afficher = document.getElementById("aff");
+                    play.addEventListener("click", function(){
+                        j ++;
+                        if (j % 2 == 0) {
+                            afficher.style.display = 'block';
+                        }
+                        else {
+                            afficher.style.display = 'none';
+                        }
+                    })
+                </script>
             </div>
+            <!-- <div class="lien-ancres" id="ancre">
+                <a href="" class="active">Home</a>
+                <a href="#propo">About</a>
+                <a href="#service">Service</a>
+                <a href="#porto">Portfolio</a>
+                <a href="#team">Team</a>
+                <a href="section-header.html">Blog</a>
+                 <a href="" >Drop Down <i class="fa-solid fa-chevron-down"></i></span></a><span> -->
+                <!-- <a href="#contact">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>  -->
+          
         </div>
          <!-- *****************Fin navbar******************** -->
         <div class="carrousel-menu">
@@ -47,7 +77,6 @@
             </div>
             <div class="carroussel-img">
                 <img src="images/profil/img-1.png" alt="">
-
             </div>
         </div>
         <div class="top-carroussel">
@@ -67,55 +96,106 @@
                 <p class="icons-top"><i class="bi bi-command"></i></p>
                 <p class="text-para">Lorem ipsum</p>
             </div>
-
         </div>
     </section>
-   <!-- *********************************Debut Section apropo**************************** --> 
-     <h2 class="titre-midle" id="midle1">Section A propos</h2>
-     <section id="propos">
-         <div class="a-props1">
-             <p class="para-propos">
-                 Voluptatem dignissimos provident quasi <br>corporis
-             </p>
-             <div class="img-1" style="overflow: hidden;">
-                 <img src="images/About/propos1.png" alt="" width="100%">
-             </div>
-             <p class="para-propos">
-                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, repellat! 
-                 earum odit nam blanditiis ipsum illo amet dignissimos, magni delectus rem 
-                 officiis exercitationem iste nihil debitis dolorum eligendi quas! 
-                 
-                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, repellat! Facilis 
-                 earum odit nam blanditiis ipsum illo amet dignissimos, magni delectus rem 
-                 earum odit nam blanditiis ipsum illo amet dignissimos, magni delectus rem
-                 officiis  debitis dolorum eligendi quas! 
-             </p>
-         </div>
-         <div class="a-props2">
-             <p class="para-propos">
-                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, repellat! Facilis 
-                 earum odit nam blanditiis ipsum illo amet dignissimos, magni delectus rem <br>
-                 <i class="fa-solid fa-circle-check" style="color: #008374;"></i> officiis exercitationem iste nihil debitis dolorum eligendi quas! <br>
-                 <i class="fa-solid fa-circle-check" style="color: #008374;"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, repellat! Facilis <br>
-                 <i class="fa-solid fa-circle-check" style="color: #008374;"></i> earum odit nam blanditiis ipsum illo amet dignissimos, magni delectus rem <br>
-                 earum odit nam blanditiis ipsum illo amet dignissimos, magni delectus rem 
-                 officiis iste nihil debitis dolorum eligendi quas! 
-                 
-                 
-                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, repellat! 
-                 earum odit nam blanditiis ipsum illo amet dignissimos, magni delectus rem 
-                 officiis exercitationem iste nihil debitis dolorum eligendi quas! 
-             
-             </p>
-             <iframe width="380" height="250" src="https://www.youtube.com/embed/XpGgaqKsVt4?si=OVzahRib66fD-sNv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
- 
-         </div>
-     </section>    
+   <!-- *********************************Debut Sectionteam**************************** -->
+    <!-- <h2>Section A propos</h2>
+    <section id="propos">
+        <div class="a-props1">
+            <p>
+                Voluptatem dignissimos provident quasi <br>corporis
+            </p>
+            <div class="img-1" style="overflow: hidden;">
+                <img src="propos1.png" alt="" width="100%">
+            </div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, repellat!
+                earum odit nam blanditiis ipsum illo amet dignissimos, magni delectus rem
+                officiis exercitationem iste nihil debitis dolorum eligendi quas!
+    
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, repellat! Facilis
+                earum odit nam blanditiis ipsum illo amet dignissimos, magni delectus rem
+                earum odit nam blanditiis ipsum illo amet dignissimos, magni delectus rem
+                officiis debitis dolorum eligendi quas!
+            </p>
+        </div>
+        <div class="a-props2">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, repellat! Facilis
+                earum odit nam blanditiis ipsum illo amet dignissimos, magni delectus rem <br>
+                <i class="fa-solid fa-circle-check" style="color: #008374;"></i> officiis exercitationem iste nihil debitis
+                dolorum eligendi quas! <br>
+                <i class="fa-solid fa-circle-check" style="color: #008374;"></i> Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Iste, repellat! Facilis <br>
+                <i class="fa-solid fa-circle-check" style="color: #008374;"></i> earum odit nam blanditiis ipsum illo amet
+                dignissimos, magni delectus rem <br>
+                earum odit nam blanditiis ipsum illo amet dignissimos, magni delectus rem
+                officiis iste nihil debitis dolorum eligendi quas!
+    
+    
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, repellat!
+                earum odit nam blanditiis ipsum illo amet dignissimos, magni delectus rem
+                officiis exercitationem iste nihil debitis dolorum eligendi quas!
+    
+            </p>
+            <iframe width="380" height="250" src="https://www.youtube.com/embed/XpGgaqKsVt4?si=OVzahRib66fD-sNv"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+    
+        </div>
+    </section> -->
+    <!-- *********************************Fin Sectionteam**************************** -->
+    <!-- *********************************Debut Section apropo**************************** -->
+    <h2 class="titre-midle" id="propo" style="margin-top: -60px;">A PROPOS</h2>
+    <section id="propos">
+        <div class="a-props1">
+            <p class="para-propos">
+                Voluptatem dignissimos provident quasi <br>corporis
+            </p>
+            <div class="img-1" style="overflow: hidden;">
+                <img src="images/About/propos1.png" alt="" width="100%">
+            </div>
+            <p class="para-propos">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, repellat!
+                earum odit nam blanditiis ipsum illo amet dignissimos, magni delectus rem
+                officiis exercitationem iste nihil debitis dolorum eligendi quas!
+    
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, repellat! Facilis
+                earum odit nam blanditiis ipsum illo amet dignissimos, magni delectus rem
+                earum odit nam blanditiis ipsum illo amet dignissimos, magni delectus rem
+                officiis debitis dolorum eligendi quas!
+            </p>
+        </div>
+        <div class="a-props2">
+            <p class="para-propos">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, repellat! Facilis
+                earum odit nam blanditiis ipsum illo amet dignissimos, magni delectus rem <br>
+                <i class="fa-solid fa-circle-check" style="color: #008374;"></i> officiis exercitationem iste nihil debitis
+                dolorum eligendi quas! <br>
+                <i class="fa-solid fa-circle-check" style="color: #008374;"></i> Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Iste, repellat! Facilis <br>
+                <i class="fa-solid fa-circle-check" style="color: #008374;"></i> earum odit nam blanditiis ipsum illo amet
+                dignissimos, magni delectus rem <br>
+                earum odit nam blanditiis ipsum illo amet dignissimos, magni delectus rem
+                officiis iste nihil debitis dolorum eligendi quas!
+    
+    
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, repellat!
+                earum odit nam blanditiis ipsum illo amet dignissimos, magni delectus rem
+                officiis exercitationem iste nihil debitis dolorum eligendi quas!
+    
+            </p>
+            <iframe width="380" height="250" src="https://www.youtube.com/embed/XpGgaqKsVt4?si=OVzahRib66fD-sNv"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+    </section>
     <!-- *********************************Fin Section apropo**************************** -->
 
-
     <!-- ******************************* Debut de la section services **************** -->
-    <h2  id="service"class="titre-midle" >SERVICES</h2>
+    <h2 style="margin-top: 40px;" id="service">SERVICES</h2>
     <section id="services" class="services">
         <div class="services-box">
             <div class="box-items-first">
@@ -188,7 +268,7 @@
 
 
     <!-- ******************************* Debut de la section portofollio **************** -->
-    <h2 id="porto" class="titre-midle">PORTOF0LIO</h2>
+    <h2 id="porto">PORTOF0LIO</h2>
     <div class="portofollio-all" id="portofollio-all">
         <div class="portofollio-head">
             <ul class="head">
@@ -274,22 +354,15 @@
             </div>
         </section>
     </div>
-     <!-- ******************************* Fin de la section portofollio **************** -->
 
-
-
-      <!-- ******************************* Debut de la section team **************** -->
-      <section id="team-impact">
-        <div class="text-entete">
-            <h1>Our team</h1><br>
-             <hr>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus</p>
-        </div>
+    <!-- ******************************* Debut de la section team **************** -->
+    <h2 id="team">TEAM</h2>
+    <section id="team-impact">
         <div class="content-card">
             <div class="card-un">
                 <div class="img-un">
                     <img src="images/profil/profile1.PNG" alt="">
-
+    
                 </div>
                 <div class="text-card-un">
                     <p>Walter White</p>
@@ -305,7 +378,7 @@
             <div class="card-deux">
                 <div class="img-deux">
                     <img src="images/profil/profile2.PNG" alt="">
-
+    
                 </div>
                 <div class="text-card-deux">
                     <p>Sarah jinhson</p>
@@ -321,7 +394,7 @@
             <div class="card-trois">
                 <div class="img-trois">
                     <img src="images/profil/profile3.PNG" alt="">
-
+    
                 </div>
                 <div class="text-card-trois">
                     <p>Williams Anderson</p>
@@ -337,7 +410,7 @@
             <div class="card-trois">
                 <div class="img-quatre">
                     <img src="images/profil/profile4.PNG" alt="">
-
+    
                 </div>
                 <div class="text-card-quatre">
                     <p>Amanda Jepson</p>
@@ -352,11 +425,12 @@
             </div>
         </div>
     </section>
+    
+    
+    <!-- ******************************* fin de la section team **************** -->
 
 
-      <!-- ******************************* fin de la section team **************** -->
-
-    <h2 id="blog" class="titre-midle">RECENT POST BLOG</h2>
+    <h2 id="blog">RECENT POST BLOG</h2>
     <!-- ************** Debut ed la section content ******************************* -->
     <section id="content" class="content">
         <div class="content-box">
@@ -403,72 +477,75 @@
         </div>
     </section>
 
-    <h2 id="price" class="titre-midle">PRICING</h2>
-       <!-- *****************************************Debut pricing************************************** -->
-       <section id="pricing">
+    <h2 id="#price">PRICING</h2>
+    <section id="pricing">
         <div class="pricing-content">
-            <div class="free-pricing" id="pricing-all">
+            <div class="free-pricing bus-p">
                 <h3 class="titre-un">Free Plan</h3>
-                <div class="cercle"><i class="fa-solid fa-cube"></i></div>
+                <div class="cercle">
+                    <div>
+                        <i class="fa-solid fa-cube"></i>
+                    </div>
+                </div>
                 <div>
-                    <p class="montant">$0 <span class="month"style="font-size: 10px ;
-                        color: gray !important;" >/month</span></p>
+                    <p class="montant">$0 <span class="month">/month</span></p>
                 </div>
                 <div class="text-icons">
-                    <p><i class="fa-solid fa-check"></i> Lorem ipsum dolor, sit amet  </p>
-                    <p><i class="fa-solid fa-check"></i> Lorem ipsum dolor, sit amet  </p>
-                    <p><i class="fa-solid fa-check"></i> Lorem ipsum dolor, sit amet  </p>
-                    <p class="barre"><i class="fa-solid fa-xmark"></i> Lorem ipsum dolor, sit amet  </p>
-                    <p class="barre"><i class="fa-solid fa-xmark"></i> Lorem ipsum dolor, sit amet  </p>
+                    <p><i class="fa-solid fa-check"></i> Lorem ipsum dolor, sit amet </p>
+                    <p><i class="fa-solid fa-check"></i> Lorem ipsum dolor, sit amet </p>
+                    <p><i class="fa-solid fa-check"></i> Lorem ipsum dolor, sit amet </p>
+                    <p class="barre"><i class="fa-solid fa-xmark"></i> Lorem ipsum dolor, sit amet </p>
+                    <p class="barre"><i class="fa-solid fa-xmark"></i> Lorem ipsum dolor, sit amet </p>
                 </div>
-                <div class="btn-buy"><button >Buy now</button></div>
-
+                <div class="btn-buy"><button>Buy now</button></div>
+    
             </div>
-            <div class="business-pricing">
+            <div class="business-pricing bus-p">
                 <h2 class="titre-un">Business Plan</h2>
-                <div class="cercle"><i class="bi bi-airplane"></i></div>
+                <div class="cercle">
+                    <div>
+                        <i class="bi bi-airplane"></i>
+                    </div>
+                </div>
                 <div>
-                    <p class="montant">$29 <span class="month" style="font-size: 10px ;
-                        color: gray !important;">/month</span></p>
+                    <p class="montant">$29 <span class="month">/month</span></p>
                 </div>
                 <div class="text-icons">
-                    <p><i class="fa-solid fa-check"></i> Lorem ipsum dolor, sit amet  </p>
-                    <p><i class="fa-solid fa-check"></i> Lorem ipsum dolor, sit amet  </p>
-                    <p><i class="fa-solid fa-check"></i> Lorem ipsum dolor, sit amet  </p>
-                    <p><i class="fa-solid fa-check"></i>  Lorem ipsum dolor, sit amet  </p>
-                    <p><i class="fa-solid fa-check"></i>  Lorem ipsum dolor, sit amet </p>
+                    <p><i class="fa-solid fa-check"></i> Lorem ipsum dolor, sit amet </p>
+                    <p><i class="fa-solid fa-check"></i> Lorem ipsum dolor, sit amet </p>
+                    <p><i class="fa-solid fa-check"></i> Lorem ipsum dolor, sit amet </p>
+                    <p><i class="fa-solid fa-check"></i> Lorem ipsum dolor, sit amet </p>
+                    <p><i class="fa-solid fa-check"></i> Lorem ipsum dolor, sit amet </p>
                 </div>
-                <div class="btn-buy"><button  class="btn-text-icons">Buy now</button></div>
-
+                <div class="btn-buy"><button class="btn-text-icons">Buy now</button></div>
+    
             </div>
-            <div class="developer-pricing" id="pricing-all">
+            <div class="developer-pricing bus-p">
                 <h3 class="titre-un">Developer Plan</h3>
-                <div class="cercle"><i class="fa-regular fa-paper-plane"></i></div>
+                <div class="cercle">
+                    <div>
+                        <i class="fa-regular fa-paper-plane"></i>
+                    </div>
+                </div>
                 <div>
-                    <p class="montant">$49 <span class="month" style="font-size: 10px ;
-                        color: gray !important;">/month</span></p>
+                    <p class="montant">$49 <span class="month">/month</span></p>
                 </div>
                 <div class="text-icons">
-                    <p ><i class="fa-solid fa-check"></i> Lorem ipsum dolor, sit amet  </p>
-                    <p><i class="fa-solid fa-check"></i> Lorem ipsum dolor, sit amet  </p>
-                    <p><i class="fa-solid fa-check"></i> Lorem ipsum dolor, sit amet  </p>
-                    <p><i class="fa-solid fa-check"></i> Lorem ipsum dolor, sit amet  </p>
-                    <p><i class="fa-solid fa-check"></i> Lorem ipsum dolor, sit amet  </p>
+                    <p><i class="fa-solid fa-check"></i> Lorem ipsum dolor, sit amet </p>
+                    <p><i class="fa-solid fa-check"></i> Lorem ipsum dolor, sit amet </p>
+                    <p><i class="fa-solid fa-check"></i> Lorem ipsum dolor, sit amet </p>
+                    <p><i class="fa-solid fa-check"></i> Lorem ipsum dolor, sit amet </p>
+                    <p><i class="fa-solid fa-check"></i> Lorem ipsum dolor, sit amet </p>
                 </div>
-                <div class="btn-buy"><button >Buy now</button></div>
-
+                <div class="btn-buy"><button>Buy now</button></div>
+    
             </div>
-
+    
         </div>
-
+    
     </section>
-     <!-- *****************************************fin pricing************************************** -->
 
-
-
-      <!-- *****************************************Debut Faq************************************** -->
-
-    <!-- <h2 class="titre-midle" id="midle3">FAQ</h2> -->
+    <h2>FAQ</h2>
     <section id="faq">
         <div class="section-faq-left">
             <h3>Frequently Asked <br><span>Questions</span></h3>
@@ -496,72 +573,96 @@
                 <li><a href=""><span>5. </span> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a><i id="click-moi"
                         class="fa-solid fa-caret-down"></i></li>
             </ol>
-            
+            <style>
+                .ol span {
+                    color: #008374;
+                }
+            </style>
+    
+            <script>
+                let cm = document.getElementById("click-moi");
+                let ac = document.getElementById("desactiver");
+                ac.style.display = "none";
+                let i = 2;
+                cm.addEventListener("click", function () {
+                    if (i % 2 == 0) {
+                        ac.style.display = "none";
+                    }
+                    else {
+                        ac.style.display = "block";
+                    }
+                    i++;
+                })
+            </script>
         </div>
     </section>
-   
+    <!-- ******************************* Fin de la section portofollio **************** -->
 
     <!-- ******************* Fin e la secton content **************************** -->
 
- <!-- *********************************Debut Contact**************************** -->
- <section id="contact" >
-    <div class="text-entete">
+
+<!-- *********************************Debut Contact**************************** -->
+<h2 id="contact">CONTACT</h2>
+<section id="contact">
+    <!-- <div class="text-entete">
         <h1>Contact</h1><br>
-         <hr>
+        <hr>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus</p>
-    </div>
+    </div> -->
     <div class=" contact">
-        <div class="lefthand" >
-          <div class="location-lefthand" id="element-lefthand">
-            <div class="incon-finder"><i class="fa-solid fa-location-dot" id="location"></i></div>
-            <div>
-                <p id="para-content">Location</p>
-               <p class="para-para">A108 Adam Street,New York,NY 535022</p>
+        <div class="lefthand">
+            <div class="location-lefthand" id="element-lefthand">
+                <div class="incon-finder"><i class="fa-solid fa-location-dot" id="location"></i></div>
+                <div>
+                    <p id="para-content">Location</p>
+                    <p class="para-para">A108 Adam Street,New York,NY 535022</p>
+                </div>
             </div>
-          </div>
-          <div class="email-lefthand" id="element-lefthand">
-            <div  class="incon-finder">
-                <i class="fa-solid fa-envelope"id="location"></i>
+            <div class="email-lefthand" id="element-lefthand">
+                <div class="incon-finder">
+                    <i class="fa-solid fa-envelope" id="location"></i>
+                </div>
+                <div>
+                    <p id="para-content">Email</p>
+                    <p class="para-para">info@gmail.com</p>
+                </div>
             </div>
-            <div>
-                <p id="para-content">Email</p>
-                <p class="para-para">info@gmail.com</p>
+            <div class="call-lefthand" id="element-lefthand">
+                <div class="incon-finder">
+                    <i class="fa-solid fa-mobile-screen" id="location"></i>
+                </div>
+                <div>
+                    <p id="para-content">Call</p>
+                    <p class="para-para">+1 5589 55888 55</p>
+                </div>
             </div>
-          </div>
-          <div class="call-lefthand" id="element-lefthand">
-            <div  class="incon-finder">
-                <i class="fa-solid fa-mobile-screen" id="location"></i>
+            <div class="hours-lefthand" id="element-lefthand">
+                <div class="incon-finder">
+                    <i class="fa-regular fa-clock" id="location"></i>
+                </div>
+                <div>
+                    <p id="para-content">Open Hours</p>
+                    <p class="para-para">Mon-Sat 11AM-23PM</p>
+                </div>
             </div>
-            <div>
-                <p id="para-content">Call</p>
-               <p class="para-para">+1 5589 55888 55</p>
-            </div>
-          </div>
-          <div class="hours-lefthand" id="element-lefthand">
-            <div  class="incon-finder">
-                <i class="fa-regular fa-clock" id="location"></i>
-            </div>
-            <div>
-                <p id="para-content">Open Hours</p>
-               <p class="para-para">Mon-Sat 11AM-23PM</p>
-            </div>
-          </div>
         </div>
         <div class="righthand">
-        <div class="formulaire">
-            <form action="">
-                <div  class="flex-input">
-                    <input type="text" placeholder="Your name" id="input1">
-                 <input type="text"  placeholder="Your email" id="input2">
-                </div>
-                <br>
-                <input type="text"  placeholder="subject " id="input3"><br>
-                <textarea name="text-area" id=" text-area" cols="95.5" rows="10" id="text-area" placeholder="message" style=" padding-left: 5px; box-shadow: 0px 1px 2px rgb(153, 153, 153);border-radius: 5px; border: 2px solid var(--gris);"></textarea>
-                <div class="btn-div-content">
-                    <button class="btn-contact">Send message</button>
-                </div>
-            </form>
-        </div>
+            <div class="formulaire">
+                <form action="">
+                    <div class="flex-input">
+                        <input type="text" placeholder="Your name" id="input1">
+                        <input type="text" placeholder="Your email" id="input2">
+                    </div>
+                    <br>
+                    <input type="text" placeholder="subject " id="input3"><br>
+                    <textarea name="text-area" id=" text-area" cols="96.5" rows="10" id="text-area"
+                        placeholder="message"
+                        style=" padding-left: 5px; box-shadow: 0px 1px 2px rgb(153, 153, 153);border-radius: 5px; border: 2px solid var(--gris); width: 96.5%;"></textarea>
+                    <div class="btn-div-content" style="padding-bottom: 15px; ">
+                        <button class="btn-contact">Send message</button>
+                    </div>
+                </form>
+            </div>
 
         </div>
 
@@ -572,13 +673,6 @@
 
 
 <!-- *********************************Fin Contact**************************** -->
-
-
-
-
-
-
-
 
 
     <!-- ******************************* Debut de la section footer **************** -->
@@ -634,37 +728,18 @@
                     <li><a href=""><span>Phone:</span> +1 5589 55488 55</a></li>
                     <li><a href=""><span>Email:</span> infos@gmail.com</a></li>
                 </ul>
-                <a href="#menu"><i class="fa-solid fa-arrow-left" style="color: #F85A40; font-size: 20px;"></i></a>
+            </div>
+            
             </div>
         </div>
+        <a href="#menu"><img src="images/content/fleche-vers-le-haut-removebg-preview.png" style="color: #F85A40; width: 30px ;height: 30px; position: relative; left: 100%; top: 60%;"></a>
         <div class="footer-copyright">
             <p>&copy Copyright <span>Impact</span>. All Right Reserved <br>Designed by BoostrapMade</p>
+            
         </div>
+        
     </section>
     <!-- ******************************* Fin de la section footer **************** -->
-
-
-    <style>
-        .ol span {
-            color: #008374;
-        }
-    </style>
-
-    <script>
-        let cm = document.getElementById("click-moi");
-        let ac = document.getElementById("desactiver");
-        ac.style.display = "none";
-        let i = 2;
-        cm.addEventListener("click", function () {
-            if (i % 2 == 0) {
-                ac.style.display = "none";
-            }
-            else {
-                ac.style.display = "block";
-            }
-            i++;
-        })
-    </script>
 
 </body>
 </html>
